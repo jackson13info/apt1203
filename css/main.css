@@ -1,0 +1,127 @@
+body {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	background-color: #F8F8FF;
+}
+.container {
+	display: inline-block;
+	max-width: 700px;
+	width: 100%;
+
+	height: 500px;
+}
+.logo {
+	display: inline-block;
+	width: 100%;
+	max-width: 350px;
+	height: auto;
+}
+.menu {
+	text-align: left;
+	padding: 10px;
+}
+.section {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 10px;
+
+	font-family: 'Caveat', cursive;
+	font-weight: 400;
+	font-size: 26px;
+	color: #111111;
+}
+.item {
+	display: inline-block;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: relative;
+	width: 100%;
+
+	font-family: 'Caveat', cursive;
+	font-weight: 400;
+}
+.item .name {
+	display: inline-block;
+	text-align: left;
+	padding-bottom: 5px;
+	font-size: 24px;
+	color: #222222;
+}
+.item .description {
+	font-size: 20px;
+	color: #555555;
+
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+.item .ingredients {
+	font-size: 16px;
+	color: #777777;
+	padding-left: 10px;
+}
+.item .price {
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	color: #999999;
+}
+.footer {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	font-family: 'Caveat', cursive;
+	font-weight: 400;
+	font-size: 16px;
+	color: #1111111;
+}
+
+/* Labeled Section */
+.labeledSection {
+	position: relative;
+	border: solid 1px green;
+	border-radius: 5px;
+	padding: 10px;
+
+	margin-top: 10px;
+}
+.labeledSection .label {
+	position: absolute;
+	top: -10px;
+	left: 10px;
+
+	padding-left: 5px;
+	padding-right: 5px;
+
+	font-family: 'Caveat', cursive;
+	background-color: #F8F8FF;
+}
+.labeledSection.event {
+	border-color: purple;
+	color: purple;
+}
+.labeledSection.new {
+	border-color: green;
+	color: green;
+}
+
+/* Helpers */
+hr.style-two {
+	margin-top: 10px;
+	width: 200px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(100, 100, 100, 0), rgba(100, 100, 100, 0.20), rgba(100, 100, 100, 0));
+}
+
+@media only screen and (max-width: 400px) {
+    .logo {
+		max-width: 300px;
+	}
+}
